@@ -1,0 +1,374 @@
+Skip to content
+
+ 
+Why GitHub?  
+Enterprise 
+Explore  
+Marketplace 
+Pricing  
+  
+Sign in 
+Sign up 
+
+
+ Watch 
+0 
+ Star 
+1 
+ Fork 
+0 
+
+charbelfannoun/retail-app-services 
+ Code 
+ Issues 0 
+ Pull requests 0 
+ Projects 0 
+ Security 
+ Insights 
+Dismiss 
+Join GitHub today
+GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.
+Sign up 
+Branch: master 
+retail-app-services/.gitignore 
+Find file 
+Copy path 
+ charbelrnd Initial commit, git ignore file 
+1f1914e on May 18 
+1 contributor 
+159 lines (134 sloc) 1.96 KB 
+Raw
+Blame
+History
+   
+
+######################
+
+# Node
+
+######################
+
+**/node/**
+
+**/node_modules/**
+
+/node/**
+
+/node_modules/**
+
+
+
+######################
+
+# SASS
+
+######################
+
+**/.sass-cache/**
+
+.sass-cache/**
+
+
+
+######################
+
+# Eclipse
+
+######################
+
+*.pydevproject
+
+**/.project
+
+.project
+
+**/.metadata
+
+.metadata
+
+.recommenders
+
+**/.recommenders
+
+**/bin/**
+
+**/tmp/**
+
+**/tmp/**/*
+
+/bin/**
+
+/tmp/**
+
+/tmp/**/*
+
+*.tmp
+
+*.bak
+
+*.swp
+
+*~.nib
+
+local.properties
+
+.classpath
+
+.settings/**
+
+.loadpath
+
+/src/main/resources/rebel.xml
+
+
+
+# External tool builders
+
+.externalToolBuilders/**
+
+
+
+# Locally stored "Eclipse launch configurations"
+
+*.launch
+
+
+
+# CDT-specific
+
+.cproject
+
+
+
+# PDT-specific
+
+.buildpath
+
+
+
+
+
+######################
+
+# Intellij
+
+######################
+
+.idea/**
+
+**/.idea/
+
+**/*.iml
+
+*.iml
+
+**/*.iws
+
+*.iws
+
+**/*.ipr
+
+*.ipr
+
+**/*.ids
+
+*.ids
+
+**/*.orig
+
+*.orig
+
+
+
+######################
+
+# Maven
+
+######################
+
+**/log/**
+
+**/target/**
+
+/log/**
+
+/target/**
+
+
+
+######################
+
+# Gradle
+
+######################
+
+**/.gradle/**
+
+.gradle/**
+
+
+
+######################
+
+# Package Files
+
+######################
+
+**/*.jar
+
+**/*.war
+
+**/*.ear
+
+**/*.db
+
+*.jar
+
+*.war
+
+*.ear
+
+*.db
+
+
+
+######################
+
+# Windows
+
+######################
+
+# Windows image file caches
+
+Thumbs.db
+
+
+
+# Folder config file
+
+Desktop.ini
+
+
+
+**/*.exe
+
+
+
+######################
+
+# Mac OSX
+
+######################
+
+.DS_Store
+
+.svn
+
+
+
+# Thumbnails
+
+._*
+
+
+
+# Files that might appear on external disk
+
+.Spotlight-V100
+
+.Trashes
+
+
+
+######################
+
+# Directories
+
+######################
+
+/build/**
+
+/bin/**
+
+/spring_loaded/**
+
+/deploy/**
+
+**/build/**
+
+**/bin/**
+
+**/spring_loaded/**
+
+**/deploy/**
+
+
+
+######################
+
+# Logs
+
+######################
+
+**/*.log
+
+
+
+######################
+
+# Others
+
+######################
+
+*.class
+
+*.*~
+
+*~
+
+.merge_file*
+
+
+
+######################
+
+# Gradle Wrapper
+
+######################
+
+!gradle/wrapper/gradle-wrapper.jar
+
+
+
+######################
+
+# Maven Wrapper
+
+######################
+
+!.mvn/wrapper/maven-wrapper.jar
+
+
+
+
+
+##########################
+
+# Specific Project Files
+
+##########################
+
+© 2019 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+ 
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+
