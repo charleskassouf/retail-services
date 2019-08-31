@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CruddemoApplication {
 
 	public static void main(String[] args) {
+		// todo this for testing
 		SpringApplication.run(CruddemoApplication.class, args);
 	}
 }
