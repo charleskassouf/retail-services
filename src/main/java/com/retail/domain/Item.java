@@ -35,9 +35,7 @@ public class Item {
     @JoinColumn
     private PurchasedItem purchasedItem;
 
-    @Autowired
     public Item(String itemName, BigDecimal itemPrice, ItemTypes itemType) {
-//        this.id = id;
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemType = itemType;

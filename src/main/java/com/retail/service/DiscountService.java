@@ -3,8 +3,6 @@ package com.retail.service;
 import com.retail.domain.Customer;
 import com.retail.domain.Item;
 import com.retail.domain.types.ItemTypes;
-import com.retail.repository.CustomerRepo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -14,7 +12,7 @@ import java.util.List;
 
 @Service
 public class DiscountService {
-    public static BigDecimal userDiscount(Customer customer, List<Item> items) {
+    public BigDecimal userDiscount(Customer customer, List<Item> items) {
         final BigDecimal totalPurchaseAmount = removeGroceries(items);
         if (totalPurchaseAmount.equals(BigDecimal.ZERO)) {
             return totalPurchaseAmount;
@@ -38,14 +36,14 @@ public class DiscountService {
         return BigDecimal.ZERO;
     }
 
-    private static BigDecimal removeGroceries(List<Item> purchasedItems) {
+    private BigDecimal removeGroceries(List<Item> purchasedItems) {
         return purchasedItems.stream()
                 .filter(i -> i.getItemType() != ItemTypes.GROCERIES)
                 .map(Item::getItemPrice)
                 .reduce(BigDecimal::add).orElse(BigDecimal.valueOf(0));
     }
 
-    private static BigDecimal calculatePercentage(BigDecimal percentage, BigDecimal amount) {
+    private BigDecimal calculatePercentage(BigDecimal percentage, BigDecimal amount) {
         return amount.multiply(percentage).divide(BigDecimal.valueOf(100), 10, RoundingMode.FLOOR);
     }
 }

@@ -37,10 +37,7 @@ public class Customer {
     private Set<PurchasedItem> purchasedItems;
 
 
-    @Autowired
     public Customer(String lastName, LocalDateTime createdDate, CustomerTypes customerType) {
-//        this.id = id;
-//        this.firstName = firstName;
         this.lastName = lastName;
         this.createdDate = createdDate;
         this.customerType = customerType;

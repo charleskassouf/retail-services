@@ -17,9 +17,11 @@ import java.util.stream.Collectors;
 public class CustomerService {
     private CustomerRepo customerRepo;
 
+    private DiscountService discountService;
     @Autowired
-    public CustomerService(CustomerRepo customerRepo) {
+    public CustomerService(CustomerRepo customerRepo, DiscountService discountService) {
         this.customerRepo = customerRepo;
+        this.discountService = discountService;
     }
 
     public List<CustomerDTO> findAll() {
@@ -34,6 +36,6 @@ public class CustomerService {
         if (!customer.isPresent()) {
             return BigDecimal.ZERO;
         }
-        return DiscountService.userDiscount(customer.get(), items);
+        return discountService.userDiscount(customer.get(), items);
     }
 }

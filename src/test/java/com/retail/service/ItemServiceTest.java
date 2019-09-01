@@ -34,6 +34,7 @@ public class ItemServiceTest {
         itemList.add(new Item("Test 2", BigDecimal.ONE, ItemTypes.OTHERS));
         when(itemsRepository.findAll()).thenReturn(itemList);
         List<ItemDTO> listItems = itemsService.findAll();
+
     }
 
 }
