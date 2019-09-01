@@ -36,8 +36,8 @@ public class Item {
     private PurchasedItem purchasedItem;
 
     @Autowired
-    public Item(Long id, String itemName, BigDecimal itemPrice, ItemTypes itemType) {
-        this.id = id;
+    public Item(String itemName, BigDecimal itemPrice, ItemTypes itemType) {
+//        this.id = id;
         this.itemName = itemName;
         this.itemPrice = itemPrice;
         this.itemType = itemType;

@@ -38,9 +38,9 @@ public class Customer {
 
 
     @Autowired
-    public Customer(Long id, String firstName, String lastName, LocalDateTime createdDate, CustomerTypes customerType) {
-        this.id = id;
-        this.firstName = firstName;
+    public Customer(String lastName, LocalDateTime createdDate, CustomerTypes customerType) {
+//        this.id = id;
+//        this.firstName = firstName;
         this.lastName = lastName;
         this.createdDate = createdDate;
         this.customerType = customerType;
