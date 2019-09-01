@@ -25,7 +25,7 @@ public class CustomerService {
     public List<CustomerDTO> findAll() {
         return customerRepo.findAll()
                 .stream()
-                .map(item -> new CustomerDTO( item.getId(), item.getFirstName(), item.getLastName(), item.getCreatedDate(), item.getCustomerType())) // todo add get id
+                .map(item -> new CustomerDTO( item.getId(), item.getFirstName(), item.getLastName(), item.getCreatedDate(), item.getCustomerType()))
                 .collect(Collectors.toList());
     }
 
