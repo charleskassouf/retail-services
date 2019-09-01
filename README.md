@@ -1,5 +1,3 @@
-[![CircleCI](https://circleci.com/gh/gabriel-a/discountapp.svg?style=svg)](https://circleci.com/gh/gabriel-a/discountapp) [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=gabriel-a_discountapp&metric=alert_status)](https://sonarcloud.io/dashboard?id=gabriel-a_discountapp)
-
 # Retail App
 
 Is an application to Calculate discount by type.
